@@ -8,7 +8,7 @@ import page001 from 'components/views/pages/br/como-se-tornar-frontend-dev-1/REA
 
 const Markdown =  React.lazy(() => import('components/markdown'));
 
-const Page001 = () => <Markdown path={page001} />
+const PagesLoader = (page) => () => <Markdown path={page} />
 
 
 
@@ -24,7 +24,7 @@ const Pages = () => {
             </PagesHeader>
             <PagesContent>
                 <Switch>
-                    <Route path="/pages/br/como-se-tornar-frontend-dev-1" component={Page001} />
+                    <Route path="/pages/br/como-se-tornar-frontend-dev-1" component={PagesLoader(page001)} />
                 </Switch>
             </PagesContent>
         </PagesContainer>
