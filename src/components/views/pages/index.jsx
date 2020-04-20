@@ -23,7 +23,7 @@ const Pages = () => {
             </PagesHeader>
             <PagesContent>
                 <Switch>
-                    <Route path="/pages/br/como-se-tornar-frontend-dev-1" component={PagesLoader('/pages/br/como-se-tornar-frontend-dev-1/README.md')} />
+                    <Route path="/br/pages/como-se-tornar-frontend-dev-1" component={PagesLoader('/pages/br/como-se-tornar-frontend-dev-1/README.md')} />
                 </Switch>
             </PagesContent>
         </PagesContainer>
