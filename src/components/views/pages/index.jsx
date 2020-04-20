@@ -4,7 +4,6 @@ import { Link, Switch, Route } from 'react-router-dom';
 
 
 // Pages
-import page001 from 'components/views/pages/br/como-se-tornar-frontend-dev-1/README.md';
 
 const Markdown =  React.lazy(() => import('components/markdown'));
 
@@ -24,7 +23,7 @@ const Pages = () => {
             </PagesHeader>
             <PagesContent>
                 <Switch>
-                    <Route path="/pages/br/como-se-tornar-frontend-dev-1" component={PagesLoader(page001)} />
+                    <Route path="/pages/br/como-se-tornar-frontend-dev-1" component={PagesLoader('/pages/br/como-se-tornar-frontend-dev-1/README.md')} />
                 </Switch>
             </PagesContent>
         </PagesContainer>
