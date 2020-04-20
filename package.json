@@ -17,7 +17,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && cd ./deploy && git pull origin master && cd ../ && mv ./deploy/.git ./build/ && mv ./deploy/CNAME ./build/ && rm -rf ./deploy && mv ./build ./deploy && cd ./deploy && git add . && git commit -m \"New Deploy\" && git push origin master -f"
+    "movefiles": "mv ./deploy/.git ./build/ && mv ./deploy/CNAME ./build/ && rm -rf ./deploy && mv ./build ./deploy",
+    "newcommit": "cd ./deploy && git add . && git commit -m \"New Deploy\" && git pull origin master && git push origin master",
+    "deploy": "npm run build && npm run movefiles && npm run newcommit"
   },
   "eslintConfig": {
     "extends": "react-app"
