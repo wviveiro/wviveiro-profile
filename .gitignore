@@ -11,6 +11,7 @@
 # production
 /build
 /deploy
+/public/pages
 
 # misc
 .DS_Store
