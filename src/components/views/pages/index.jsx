@@ -7,7 +7,7 @@ import { Link, Switch, Route } from 'react-router-dom';
 
 const Markdown =  React.lazy(() => import('components/markdown'));
 
-const PagesLoader = (page) => () => <Markdown path={page} />
+const PagesLoader = (page) => () => <Markdown path={`${process.env.REACT_APP_PATH_MD}${page}`} />
 
 
 
