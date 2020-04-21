@@ -5,7 +5,8 @@ export const PagesContainer = styled.div``;
 export const PagesContent = styled.div`
     width: calc(100% - 20px);
     max-width: 970px;
-    margin: 0 auto 60px;
+    margin: 0 auto;
+    padding-bottom: 60px;
 `;
 
 export const PagesHeader = styled.header`
