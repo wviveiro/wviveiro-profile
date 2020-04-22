@@ -10,7 +10,7 @@ const Router = () => {
     return (
         <Suspense fallback={<Loading />}>
             <Switch>
-                <Route path="/br/pages" component={Pages} />
+                <Route path="/pages" component={Pages} />
                 <Route path="/" component={Profile} />
             </Switch>
         </Suspense>

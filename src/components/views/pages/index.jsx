@@ -1,13 +1,7 @@
 import React from 'react';
 import { PagesContainer, PagesHeader, PagesContent } from './style';
-import { Link, Switch, Route } from 'react-router-dom';
-
-
-// Pages
-
-const Markdown =  React.lazy(() => import('components/markdown'));
-
-const PagesLoader = (page) => () => <Markdown path={`${process.env.REACT_APP_PATH_MD}${page}`} />
+import { Link } from 'react-router-dom';
+import Routes from './routes';
 
 
 
@@ -22,9 +16,7 @@ const Pages = () => {
                 </Link>
             </PagesHeader>
             <PagesContent>
-                <Switch>
-                    <Route path="/br/pages/como-se-tornar-frontend-dev-1" component={PagesLoader('/pages/br/como-se-tornar-frontend-dev-1/README.md')} />
-                </Switch>
+                <Routes />
             </PagesContent>
         </PagesContainer>
     );
