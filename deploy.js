@@ -10,6 +10,7 @@ const main = async () => {
         await findREADME(pathname, async (newpath) => {
             const p = `${pathname}${newpath}/index.html`;
             await fs.copyFileSync('./build/index.html', p);
+            console.log('New file created ', p);
         });
         await execSync('npm run movefiles && npm run newcommit', {stdio: 'inherit'});
 
