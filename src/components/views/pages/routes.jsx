@@ -6,6 +6,7 @@ const PageRoutes = () => {
     return (
         <Switch>
             <Route path="/pages/br/como-se-tornar-frontend-dev-1" component={PagesLoader('/pages/br/como-se-tornar-frontend-dev-1/README.md')} />
+            <Route path="/pages/br/como-se-tornar-frontend-dev-2" component={PagesLoader('/pages/br/como-se-tornar-frontend-dev-2/README.md')} />
         </Switch>
     );
 };

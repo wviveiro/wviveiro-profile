@@ -1,4 +1,4 @@
-## Como se tornar um Desenvolvedor Frontend
+## Como se tornar um Desenvolvedor Front End
 ### Aula 1
 
 - O que é Front End
